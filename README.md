@@ -11,7 +11,7 @@ Decoration inherited from: https://github.com/vvarodi
 
 ### What is libft?
 
-Libft is an individual project at [42][1] that requieres us to re-create some standard C library functions for future projects, and have a deeper understanding of data structures and basic algorithms. At 42 we are not allowed to use some standard libraries on our projects, so we have to keep growing this libary with our own functions as we go farther in the program.
+Libft is an individual project at [42][1] that requires us to re-create some standard C library functions for future projects, and have a deeper understanding of data structures and basic algorithms. At 42 we are not allowed to use some standard libraries on our projects, so we have to keep growing this libary with our own functions as we go farther in the program.
 
 ### What's in it?
 
@@ -25,22 +25,22 @@ There are 4 sections:
 ### List of functions
 Libc functions | Additional functions | Bonus Functions | Personal Functions
 :----------- | :-----------: | :-----------: | -----------:
-[ft_memset](#ft_memset)		|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) 
-[ft_bzero](#ft_bzero)		|[ft_strjoin](#ft_strjoin)  | [ft_lstadd_front](#ft_lstadd_front)| [ft_isupper](#ft_isupper) 
-[ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)  | [ft_lstsize](#ft_lstsize)          | [ft_isspace](#ft_isspace)   
-[ft_memccpy](#ft_memccpy)	|[ft_split](#ft_split)      | [ft_lstlast](#ft_lstlast)          | [ft_strndup](#ft_strndup)
-[ft_memmove](#ft_memmove)	|[ft_itoa](#ft_itoa)       | [ft_lstadd_back](#ft_lstadd_back)  | [ft_strcdup](#ft_strcdup)
-[ft_memchr](#ft_memchr)		|[ft_strmapi](#ft_strmapi)  | [ft_lstdelone](#ft_lstdelone)     | 
+[ft_memset](#ft_memset)		|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | 
+[ft_bzero](#ft_bzero)		|[ft_strjoin](#ft_strjoin)  | [ft_lstadd_front](#ft_lstadd_front)| 
+[ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)  | [ft_lstsize](#ft_lstsize)          |   
+[ft_memccpy](#ft_memccpy)	|[ft_split](#ft_split)      | [ft_lstlast](#ft_lstlast)          |
+[ft_memmove](#ft_memmove)	| [ft_strmapi](#ft_strmapi)      | [ft_lstadd_back](#ft_lstadd_back)  |
+[ft_memchr](#ft_memchr)		| [ft_putnbr_fd](#ft_putnbr_fd) | [ft_lstdelone](#ft_lstdelone)     | 
 [ft_memcmp](#ft_memcmp)		|[ft_putchar_fd](#ft_putchar_fd)| [ft_lstclear](#ft_lstclear)    | 
 [ft_strlen](#ft_strlen)		|[ft_putstr_fd](#ft_putstr_fd)	| [ft_lstiter](#ft_lstiter)      | 
 [ft_strdup](#ft_strdup)		|[ft_putendl_fd](#ft_putendl_fd)| [ft_lstmap](#ft_lstmap)        | 
-[ft_strcpy](#ft_strcpy)		|[ft_putnbr_fd](#ft_putnbr_fd)	|				| 
+[ft_strcpy](#ft_strcpy)		|	|				| 
 [ft_strlcpy](#ft_strlcpy)	| 	|			| 
 [ft_strcat](#ft_strcat)		| 	| | 
 [ft_strlcat](#ft_strlcat)	| 	| | 
 [ft_strchr](#ft_strchr)		| 	| | 
 [ft_strrchr](#ft_strrchr)	| 	| | 
-[ft_strstr](#ft_strstr)		|   | | 
+[ft_calloc](#ft_calloc) |   | | 
 [ft_strnstr](#ft_strnstr)	| 	| | 
 [ft_strcmp](#ft_strcmp)		| 	| | 
 [ft_strncmp](#ft_strncmp)	| 	| | 
@@ -49,10 +49,9 @@ Libc functions | Additional functions | Bonus Functions | Personal Functions
 [ft_isdigit](#ft_isdigit)	| 	| |
 [ft_isalnum](#ft_isalnum)	|   | | 
 [ft_isascii](#ft_isascii)	|   | | 
-[ft_isprint](#ft_isprint)	|   | | 
 [ft_toupper](#ft_toupper)   |   | | 
 [ft_tolower](#ft_tolower)	|   | | 
-[ft_calloc](#ft_calloc)     |   | |
+     |   | |
 
 ## [ft_memset](libft/ft_memset.c)
 
@@ -299,7 +298,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns a copy of the string given as argument without the characters specified in the set argument at the beginning and the end of the string|The string to be trimmed |The reference set of character to trim | The trimmed string. NULL if the allocation fails
 
-## [ft_strsplit]
+## [ft_split]
 
 `char **ft_split(char const *s, char c)`
 
@@ -315,65 +314,4 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Applies the function f to each character of the string passed as argument to create a new string (with malloc) resulting from successive applications of f |The string on which to iterate| The function to apply to each character| The string created from the successive applications of f. Returns NULL if the allocation fails
 
-## [ft_atoi]
-
-`char   ft_itoa(int n)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Allocates (with malloc) and returns a string representing the integer received as an argument. Negative numbers must be handled | The integer to convert | The string representing the integer. NULL if the allocation fails.
-
-
-
-
-
-
-
-
-
-
-## [ft_islower](libft/ft_islower.c)
-
-`int  ft_islower(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Check for a lowercase character | The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_isupper](libft/ft_isupper.c)
-
-`int ft_isupper(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Check for an uppercase character | The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_isspace](libft/ft_isspace.c)
-
-`int ft_isspace(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
- Checks for white-space characters. These are: space, form-feed ('\f'), newline ('\n'),  carriage  return('\r'), horizontal tab ('\t'), and vertical tab ('\v').| The character to test | 0 if the character tests false and 1 if the character tests true
-
-
-
-
-
-
-
-
-
-
-
-## ft_capitalize
-
-`char  *ft_capitalize(char *s)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Capitalizes the first letter of every word in a string	| The string to capitalize		| The new string with capitalized words 
-
-
-[1]: https://www.42madrid.com/ 
-[2]:
+[1]: https://21-school.ru/
