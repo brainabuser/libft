@@ -23,8 +23,8 @@ There are 4 sections:
 4.  **Personal Functions:** Functions I believe will be useful later.
 
 ### List of functions
-Libc functions | Additional functions | Bonus Functions | Personal Functions
-:----------- | :-----------: | :-----------: | -----------:
+Libc functions | Additional functions | Bonus Functions |
+:----------- | :-----------: | :-----------: |
 [ft_memset](#ft_memset)		|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | 
 [ft_bzero](#ft_bzero)		|[ft_strjoin](#ft_strjoin)  | [ft_lstadd_front](#ft_lstadd_front)| 
 [ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)  | [ft_lstsize](#ft_lstsize)          |   
@@ -51,7 +51,6 @@ Libc functions | Additional functions | Bonus Functions | Personal Functions
 [ft_isascii](#ft_isascii)	|   | | 
 [ft_toupper](#ft_toupper)   |   | | 
 [ft_tolower](#ft_tolower)	|   | | 
-     |   | |
 
 ## [ft_memset](libft/ft_memset.c)
 
