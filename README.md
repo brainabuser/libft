@@ -1,7 +1,7 @@
 # Libft - @42Born2Code
-![](pics/grade)
+![](pics/grade.png)
 
-![](pics/tests)
+![](pics/tests.png)
 
 ### TOC
 * [What is libft?](#what-is-libft)
