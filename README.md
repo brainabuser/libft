@@ -1,4 +1,5 @@
 # Libft - @42Born2Code
+Decoration inherited from: https://github.com/vvarodi 
 ![](pics/grade.png)
 
 ![](pics/tests.png)
