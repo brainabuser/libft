@@ -89,7 +89,7 @@ Copies n bytes from memory area  src  to memory  area  dst, stopping when the ch
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Copies len bytes from the memory of src to dst. Memories may overlap. First, the bytes in src are copied into a temporary array and then to dst.| Memory area dst | Memory ares arc | The number of bytes | A pointer to the memory area dst
+Copies len bytes from the memory of src to dst. Memories may overlap. First, the bytes in src are copied into a temporary array and then to dst.| Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
 
  ## [ft_memchr](ft_libft/ft_memchr.c)
 
@@ -120,22 +120,6 @@ Calculates the length of the string pointed to by s, excluding the terminating n
 Description | Param. #1 | Return Values
 :-----------: | :-----------: | :-----------:
 Duplicate string s1. Memory  for  the new string is obtained with malloc, and can  be  freed with free | The string to duplicate| A pointer   to  the  duplicated  string.  NULL  if  insufficient  memory  was available
-
-## [ft_strndup](ft_libft/ft_strndup.c)
-
-`char       *ft_strndup(const char *s, size_t n)`
-
-Description | Param. #1 | Param. #2 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:
-Allocates a specific amount of memory to copy a string | The string to copy | The maximum amount of characters to copy from the string | A pointer to the new string
-
-## [ft_strcdup](ft_libft/ft_strcdup.c)
-
-`char       *ft_strcdup(const char *s, int c)`
-
-Description | Param. #1 | Param. #2 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:
-Allocates a specific amount of memory to copy a string until the occurence of c. Example: ft_strcdup("Blue", 'u') -> "Bl"  | The string to copy before c | The character c | A pointer to the new string
 
 ## [ft_strchr](ft_libft/ft_strchr.c)
 
